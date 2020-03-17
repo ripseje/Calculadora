@@ -75,6 +75,8 @@ namespace Calculadora
         private void button16_Click(object sender, EventArgs e)
         {
             label1.Text = "0";
+            operando1 = 0;
+            operacion = "";
         }
     }
 }
