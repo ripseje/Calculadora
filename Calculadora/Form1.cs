@@ -27,7 +27,7 @@ namespace Calculadora
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void bot_numeros(object sender, EventArgs e)
         {
             Button boton = (Button)sender;
             if (label1.Text == "0") 
@@ -40,7 +40,7 @@ namespace Calculadora
             }
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        private void bot_calculo(object sender, EventArgs e)
         {
             Button boton = (Button)sender;
             operacion = boton.Text;
@@ -48,7 +48,7 @@ namespace Calculadora
             label1.Text = "0";
         }
 
-        private void button15_Click(object sender, EventArgs e)
+        private void bot_igual(object sender, EventArgs e)
         {
             double operando2 = Convert.ToDouble(label1.Text);
             double resultado = 0;
@@ -72,7 +72,7 @@ namespace Calculadora
             label1.Text = Convert.ToString(resultado);
         }
 
-        private void button16_Click(object sender, EventArgs e)
+        private void limpiar(object sender, EventArgs e)
         {
             label1.Text = "0";
             operando1 = 0;
